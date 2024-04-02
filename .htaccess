@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^expidetufactura\.com\.mx [NC]
+RewriteCond %{HTTP_HOST} ^xpd\.mx$ [OR]
+RewriteCond %{REQUEST_URI} XPD/ [OR]
+RewriteCond %{REQUEST_URI} apps/nomProd/
+RewriteRule ^(.*)$ https://expidetufactura.com.mx/pruebasMarketing/colors/$1 [L,R=301,L]
+
+
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|webp|woff|woff2|otf|html|css|js|xml|json|txt|svg|mp4)$">
+Header set Cache-Control "max-age=15552000, public"
+</FilesMatch>
+
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+
+
+
+
+ 

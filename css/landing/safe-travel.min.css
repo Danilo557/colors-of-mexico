@@ -1,0 +1,236 @@
+/*--------------------------------------------------------------
+  .Tour
+  --------------------------------------------------------------*/
+.tour {
+  height: 50vh;
+  padding-bottom:0 ;
+}
+.disclaimer {
+  height: 40vh;
+}
+
+.tour h2 {
+  line-height: 1;
+}
+
+.tour .text-gray {
+  color: #535353;
+  font-size: 2.2rem;
+}
+
+
+
+.tour .logo {
+  width: auto;
+  height: auto;
+}
+
+.tour .vl {
+  width: 5px;
+  background: #d21a6a;
+  border-radius: 40px;
+  height: 100px;
+}
+
+
+@media (max-width: 992px) {
+  .tour {
+    height: 100vh;
+  }
+
+  .tour .logo {
+    margin-bottom: 40px;
+  }
+
+  .tour .vl {
+    display: none !important;
+  }
+}
+
+
+
+
+ 
+
+ 
+
+/*--------------------------------------------------------------
+  # Parallax
+  --------------------------------------------------------------*/
+.parallax {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center
+}
+
+
+.parallax .container-fluid {
+  padding: 0;
+}
+
+
+
+.parallax h2 {
+  color: white;
+  font-size: 4rem;
+  text-shadow: black 1px 1px 0px, black 1px -1px 0px, black -1px 1px 0px, black -1px -1px 0px, black 1px 0px 0px, black 0px 1px 0px, black -1px 0px 0px, black 0px -1px 0px;
+}
+
+.parallax h2.text-pink {
+  color: #d21a6a;
+  font-size: 4rem;
+  text-shadow: white 1px 1px 0px, white 1px -1px 0px, white -1px 1px 0px, white -1px -1px 0px, white 1px 0px 0px, white 0px 1px 0px, white -1px 0px 0px, white 0px -1px 0px;
+}
+
+.parallax .background h2 {
+  color: white;
+}
+
+
+
+.parallax .background {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 5%;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.parallax .vl {
+  position: relative;
+  width: 5px;
+  background: #d21a6a;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .parallax h2 {
+    font-size: 3rem;
+  }
+
+  .parallax {
+    height: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Safe
+  --------------------------------------------------------------*/
+.safe {
+  color: black;
+  padding: 0;
+}
+.safe.padding-top-0 {
+  padding-top: 0;
+}
+
+.safe .container-fluid {
+  padding: 0% 8%;
+}
+
+.safe h2 {
+  font-size: 2.6rem;
+  color: #d21a6a;
+  background: linear-gradient(#d21a6a, #d21a6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.safe h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 4px;
+  background: #7edcfe;
+  bottom: 0;
+  right: 0%;
+}
+
+.safe .img-vertical{
+  width: auto;
+  height: 100vh;
+  padding-bottom:20px ;
+}
+
+.safe .img-senalando{
+  width: 150px;
+  height: 70px;
+  padding: 0px 20px;
+}
+
+.safe .numeral {
+  font-size: 5rem;
+  color: #c3c3c3;
+  font-family: "AvenirArabic Black";
+}
+
+.safe ul.angle-double {
+  list-style: none;
+  padding: 0;
+}
+
+.safe ul.angle-double li {
+  padding-left: 1.3em;
+}
+
+.safe ul.angle-double li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #d21b6a;
+}
+
+
+.safe .btn-red {
+  font-size: 1.2rem;
+  font-family: "AvenirArabic Black";
+  width:50%;
+  color:#ffffff;
+  border-color:#d21b6a;
+  font-weight:bold;
+  background:linear-gradient(#ad1a5a, #d21b6a);
+  height:60px;
+  line-height: 50px;
+  text-align: center;
+   
+}
+
+.safe .btn-red:hover {
+  background: linear-gradient(#d21b6a, #ad1a5a);
+}
+
+@media (max-width: 992px) {
+  .safe h2.rigth::after {
+    left: 5%;
+    right: 5%;
+    width: 90%;
+  }
+
+  .safe .img-senalando{
+    display: none;
+  }
+
+  .safe .btn-red {
+    width: 100%;
+  }
+   
+}
